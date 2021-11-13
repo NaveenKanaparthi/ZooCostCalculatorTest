@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AquaticAnimal.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooCostCalculator</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo01group</a> &gt; <span class="el_source">AquaticAnimal.java</span></div><h1>AquaticAnimal.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo01group;
+
+/**
+ * This class gives information about Aquatic animal (fish,frog,whale)
+ *
+ * @author Anurag Kolluru
+ */
+public class AquaticAnimal extends Animal {
+
+    /**
+     *
+     */
+    public double distance;
+    public boolean isDangerous;
+    private double waterDepth_meters;
+    private int watchTime;
+
+    /**
+     *
+     */
+    @Override
+    public String speak() {
+<span class="fc" id="L27">        return &quot;Generic speak method&quot;;</span>
+
+    }
+
+    /**
+     *
+     */
+    @Override
+    public String move() {
+<span class="fc" id="L36">        return &quot;Generic move method&quot;;</span>
+    }
+
+    /**
+     * This is a constructor
+     * @param distance
+     * @param isDangerous
+     * @param waterDepth_meters
+     * @param watchTime
+     * @param name
+     */
+    public AquaticAnimal(double distance, boolean isDangerous, double waterDepth_meters, int watchTime, String name) {
+<span class="fc" id="L48">        super(name);</span>
+<span class="fc" id="L49">        this.distance = distance;</span>
+<span class="fc" id="L50">        this.isDangerous = isDangerous;</span>
+<span class="fc" id="L51">        this.waterDepth_meters = waterDepth_meters;</span>
+<span class="fc" id="L52">        this.watchTime = watchTime;</span>
+<span class="fc" id="L53">    }</span>
+
+    /**
+     * This method returns depth of the water
+     *
+     * @return waterDepth_meters
+     */
+    public double getWaterDepth_meters() {
+<span class="nc" id="L61">        return waterDepth_meters;</span>
+    }
+
+    /**
+     * This method returns the watch time
+     *
+     * @return watchTime
+     */
+    public int getWatchTime() {
+<span class="nc" id="L70">        return watchTime;</span>
+    }
+
+    /**
+     * This method sets the depth of the water
+     *
+     * @param waterDepth_meters
+     */
+    public void setWaterDepth_meters(double waterDepth_meters) {
+<span class="nc" id="L79">        this.waterDepth_meters = waterDepth_meters;</span>
+<span class="nc" id="L80">    }</span>
+
+    /**
+     * This method sets the watch time
+     *
+     * @param watchTime
+     */
+    public void setWatchTime(int watchTime) {
+<span class="nc" id="L88">        this.watchTime = watchTime;</span>
+<span class="nc" id="L89">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

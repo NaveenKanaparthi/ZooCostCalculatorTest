@@ -1,0 +1,17 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+ZooCostCalculator,edu.nwmissouri.zoo01group,AquaticAnimal,14,20,0,0,6,8,4,3,4,3
+ZooCostCalculator,edu.nwmissouri.zoo01group,TerrestrialAnimal,25,14,0,0,11,6,6,3,6,3
+ZooCostCalculator,edu.nwmissouri.zoo01group,Vehicle,19,3,0,0,4,1,2,1,2,1
+ZooCostCalculator,edu.nwmissouri.zoo01group,Zebra,34,0,0,0,15,0,10,0,10,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,ZooCostCalculatorApp,5,3,0,0,2,1,1,1,1,1
+ZooCostCalculator,edu.nwmissouri.zoo01group,Giraffe,31,0,0,0,14,0,9,0,9,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,LandRover,43,0,0,0,18,0,9,0,9,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,Animal,10,12,0,0,4,5,3,1,3,1
+ZooCostCalculator,edu.nwmissouri.zoo01group,FourWheeler,19,39,0,0,4,17,2,10,2,10
+ZooCostCalculator,edu.nwmissouri.zoo01group,VehicleCategories,15,0,0,0,3,0,1,0,1,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,Jeep,34,0,0,0,15,0,9,0,9,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,ZooCostCalculatorController,7,3,0,0,2,1,1,1,1,1
+ZooCostCalculator,edu.nwmissouri.zoo01group,Motorbike,24,0,0,0,11,0,7,0,7,0
+ZooCostCalculator,edu.nwmissouri.zoo01group,AnimalGender,0,27,0,0,0,5,0,1,0,1
+ZooCostCalculator,edu.nwmissouri.zoo01group,Boat,0,30,0,0,0,12,0,9,0,9
+ZooCostCalculator,edu.nwmissouri.zoo01group,Corsain,22,17,0,0,9,8,5,5,5,5

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FourWheeler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooCostCalculator</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo01group</a> &gt; <span class="el_source">FourWheeler.java</span></div><h1>FourWheeler.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo01group;
+
+/**
+ * This is a four wheeler class extended from Vehicle Class
+ *
+ * @author Mulamalla,Akhil Kumar Reddy
+ */
+public class FourWheeler extends Vehicle {
+
+    private String vehicleName;
+    private String vehicleColor;
+    private int vehicleYear;
+    private String vehicleOwner;
+    private double speed;
+    private double distance;
+
+    /**
+     *
+     */
+<span class="fc" id="L24">    public FourWheeler(double speed, double distance) {</span>
+<span class="fc" id="L25">        this.speed = speed;</span>
+<span class="fc" id="L26">        this.distance = distance;</span>
+<span class="fc" id="L27">    }</span>
+
+    /**
+     * getter method to get vehicle name
+     *
+     * @return vehicleName//name of the brand which the car is
+     */
+    public String getVehicleName() {
+<span class="fc" id="L35">        return vehicleName;</span>
+    }
+
+    /**
+     *
+     * @return vehicleOwner
+     */
+
+    public String getVehicleOwner() {
+<span class="fc" id="L44">        return vehicleOwner;</span>
+    }
+
+    /**
+     *
+     * @param vehicleOwner
+     */
+
+    public void setVehicleOwner(String vehicleOwner) {
+<span class="fc" id="L53">        this.vehicleOwner = vehicleOwner;</span>
+<span class="fc" id="L54">    }</span>
+
+    /**
+     * setter method to set vehicleName
+     *
+     * @param vehicleName//name of the brand which the car is
+     */
+    public void setVehicleName(String vehicleName) {
+<span class="fc" id="L62">        this.vehicleName = vehicleName;</span>
+<span class="fc" id="L63">    }</span>
+
+    /**
+     * getter method to get vehicleColor
+     *
+     * @return vehicleColor
+     */
+    public String getVehicleColor() {
+<span class="fc" id="L71">        return vehicleColor;</span>
+    }
+
+    /**
+     * setter method to set vehicleColor
+     *
+     * @param vehicleColor
+     */
+    public void setVehicleColor(String vehicleColor) {
+<span class="fc" id="L80">        this.vehicleColor = vehicleColor;</span>
+<span class="fc" id="L81">    }</span>
+
+    /**
+     * getter method to get vehicleYear
+     *
+     * @return vehicleYear
+     */
+    public int getVehicleYear() {
+<span class="fc" id="L89">        return vehicleYear;</span>
+    }
+
+    /**
+     * setter method to set vehicleYear
+     *
+     * @param vehicleYear
+     */
+    public void setVehicleYear(int vehicleYear) {
+<span class="fc" id="L98">        this.vehicleYear = vehicleYear;</span>
+<span class="fc" id="L99">    }</span>
+
+    /**
+     * Boolean method to check vehicleWorkingState
+     *
+     * @param vehicleName
+     * @return vehicleWorkingState
+     */
+    public boolean vehicleWorkingState(String vehicleName) {
+<span class="fc" id="L108">        return false;</span>
+    }
+
+
+    /**
+     * getter method to get mileage
+     *
+     * @return mileage//This method returns the mileage of the car
+     */
+    @Override
+    public double getMileage() {
+<span class="nc" id="L119">        double mileage = (speed / distance) * 5 / 18;</span>
+<span class="nc" id="L120">        return mileage;</span>
+    }
+
+    /**
+     * getter method to get max Speed
+     *
+     * @return maxSpeed /This method returns the high speed of the car
+     */
+    @Override
+    public double getMaxSpeed() {
+<span class="nc" id="L130">        double maxSpeed = speed * 100;</span>
+<span class="nc" id="L131">        return maxSpeed;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

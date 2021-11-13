@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ZooCostCalculatorController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooCostCalculator</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo01group</a> &gt; <span class="el_source">ZooCostCalculatorController.java</span></div><h1>ZooCostCalculatorController.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.zoo01group;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+/**
+ * Controller that handles the default request (&quot;/&quot;).
+ *
+ * Use the new Java 15 text blocks to provide our menu. Thymeleaf:
+ * https://spring.io/guides/gs/serving-web-content/
+ *
+ * @author Sreebharath Mallampati
+ */
+@Controller
+<span class="fc" id="L17">public class ZooCostCalculatorController {</span>
+
+    /**
+     * The @GetMapping annotation ensures that HTTP GET requests to / are mapped
+     * to the index() method.Example:
+     * https://spring.io/guides/gs/serving-web-content/
+     *
+     *
+     * @param id // the id provided in the URL
+     * @param model //the model that holds information from controller to view
+     * @return View
+     */
+    @GetMapping(path = &quot;/&quot;)
+    public String index(
+            @RequestParam(name = &quot;id&quot;, required = false, defaultValue = &quot;0&quot;) String id,
+            Model model) {
+<span class="nc" id="L33">        model.addAttribute(&quot;id&quot;, id);</span>
+<span class="nc" id="L34">        return &quot;index&quot;;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

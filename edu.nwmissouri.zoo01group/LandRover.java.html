@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LandRover.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooCostCalculator</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo01group</a> &gt; <span class="el_source">LandRover.java</span></div><h1>LandRover.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo01group;
+
+/**
+ * This is LandRover class which is extended from FourWheeler
+ *
+ * @author Naveen Kumar Kanparthi
+ */
+public class LandRover extends FourWheeler {
+
+    private double price;
+    private String fuelType;
+    private int noOfCylinder;
+
+  
+    /**
+     *
+     * @param price // price of land rover
+     * @param fuelType // type of the fuel vehicle runs on
+     * @param noOfCylinder // no of cylinder
+     */
+    public LandRover(double price, String fuelType, int noOfCylinder) {
+<span class="nc" id="L26">        super(30, 120.3);</span>
+<span class="nc" id="L27">        this.price = price;</span>
+<span class="nc" id="L28">        this.fuelType = fuelType;</span>
+<span class="nc" id="L29">        this.noOfCylinder = noOfCylinder;</span>
+<span class="nc" id="L30">    }</span>
+
+    /**
+     *
+     * @return price // price of land rover
+     */
+
+    public double getPrice() {
+<span class="nc" id="L38">        return price;</span>
+    }
+
+    /**
+     *
+     * @param price // price of land rover
+     */
+
+    public void setPrice(double price) {
+<span class="nc" id="L47">        this.price = price;</span>
+<span class="nc" id="L48">    }</span>
+
+    /**
+     *
+     * @return fuelType // type of the fuel vehicle runs on
+     */
+
+    public String getFuelType() {
+<span class="nc" id="L56">        return fuelType;</span>
+    }
+
+    /**
+     *
+     * @param fuelType // type of the fuel vehicle runs on
+     */
+
+    public void setFuelType(String fuelType) {
+<span class="nc" id="L65">        this.fuelType = fuelType;</span>
+<span class="nc" id="L66">    }</span>
+
+    /**
+     *
+     * @return noOfCylinder // no of cylinder
+     */
+
+    public int getNoOfCylinder() {
+<span class="nc" id="L74">        return noOfCylinder;</span>
+    }
+
+    /**
+     *
+     * @param noOfCylinder // no of cylinder
+     */
+
+    public void setNoOfCylinder(int noOfCylinder) {
+<span class="nc" id="L83">        this.noOfCylinder = noOfCylinder;</span>
+<span class="nc" id="L84">    }</span>
+
+    /**
+     *
+     * @return maxPower // max power of the engine
+     */
+
+    /**
+     * This method returns max power
+     *
+     * @return maxPower // maxPower of the engine
+     */
+    public String maxPower() {
+<span class="nc" id="L97">        String maxPower = &quot;557.86bhp@6000-6500rpm&quot;;</span>
+<span class="nc" id="L98">        return maxPower;</span>
+    }
+
+    /**
+     * This method returns max torque
+     *
+     * @return maxTorque // maxTorque of the engine
+     */
+    public String maxTorque() {
+<span class="nc" id="L107">        String maxTorque = &quot;700Nm@3500-5000rpm&quot;;</span>
+<span class="nc" id="L108">        return maxTorque;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
